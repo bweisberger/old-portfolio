@@ -5,8 +5,8 @@ html,body{
 }
 
 .background-picture{
-    background: rgb(10,43,181);
-    background: linear-gradient(0deg, rgba(18,23,101,1) 0%, rgba(10,43,181,1) 100%);
+    background: rgb(13,53,213);
+    background: radial-gradient(ellipse, rgb(13, 53, 213) 0%, rgb(29, 38, 162) 100%);
     /* height: 100vh; */
     background-size: contain;
     margin: 0;
@@ -29,25 +29,25 @@ html,body{
 .hi-im-bill{
     font-family: 'Archivo Black', sans-serif;
     font-weight: 700;
-    color: rgb(213, 214, 253);
-    font-size: calc(20pt + 4vw);
+    color: rgb(213, 231, 242);
+    font-size: calc(20pt + 3vw);
     text-align: center;
-    /* padding-top: 10vh; */
     padding-bottom: 1vh;
     margin: 0 auto;
-    text-shadow: #020F59 3px 3px;
+    /* line-height: 10vh; */
+    /* text-shadow: rgb(5, 120, 191) 3px 3px; */
     /* text-shadow: #3DADF2 3px 3px; */
 }
 
 .full-stack{
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
-    color: #020F59;
-    font-size: calc(16pt + 1vw);
+    color: rgb(84, 165, 235);
+    font-size: calc(16pt + 3vw);
     text-align: center;
     padding-top: 0;
     margin: 0 auto;
-    text-shadow: #0424D9 2px 2px;
+    text-shadow: #020F59 2px 2px;
 }
 
 .social-media-nav{
@@ -57,16 +57,37 @@ html,body{
     align-self: start;
 }
 
-/* .connect-section{
+.connect-section{
     grid-row: 2;
     grid-column: 2;
-} */
+    place-self: center;
+}
 
 .social-media-ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 10vw;;
+}
+
+.connect-button{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: calc(1rem + 1vw);
+    color: #020F59;
+    background-color: rgb(108, 187, 237);
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+    margin: 5vh 2vw 5vh 2vw;
+    box-shadow: 2px 2px #020F59;
+    background: linear-gradient(0deg, #BF5B03 0%, #F2D33C 80%, #D89F7D 100%);
+}
+
+.connect-button:hover{
+    background-color: rgb(134, 206, 250);
+    background: linear-gradient(0deg, #BF5B03 0%, #F2D33C 95%, #D89F7D 100%);
+    box-shadow: 4px 4px 1px #020F59;
 }
 
 .social-media-img{
@@ -79,7 +100,12 @@ html,body{
 
 .home-main{
     grid-row: 3;
-    grid-column: 2;
+    grid-column: 1 / span 3;
+    /* border-image: linear-gradient(0deg, #BF5B03 0%, #F2D33C 80%, #D89F7D 100%); */
+    border-top: rgb(191, 138, 3) .5vh solid;
+    background: #BF2633;
+    background: linear-gradient(90deg,#720216 0%, #BF2633 50%, #720216 100%)
+
 }
 
 .projects-section{
@@ -94,9 +120,9 @@ html,body{
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
     /* font-weight: 700; */
-    font-size: calc(20pt + 3vw);
-    color: #020F59;
-    text-shadow: #0424D9 2px 2px;
+    font-size: calc(14pt + 3vw);
+    color: rgb(213, 231, 242);
+    text-shadow: #020F59 1px 1px;
 }
 
 .skills-list{
@@ -106,13 +132,14 @@ html,body{
 }
 
 .skill-button{
-    border: #0424D9 thick outset;
-    /* border-radius: 10%; */
+    box-shadow: 2px 2px rgb(14, 19, 82);
+    border-radius: 5px;
+    border: none;
     margin: .5vw;
-    font-size: calc(8pt + 1.5vw);
+    font-size: calc(4pt + 1vw);
     padding: .5vw;
-    background-color: #020F59;
-    color: white;
+    background-color: rgb(13, 53, 213);
+    color: #F2E5D5;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
@@ -143,64 +170,44 @@ html,body{
     /* margin-left: vw; */
 }
 /* Color Theme Swatches in Hex */
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-1-hex { color: #D8D8D8; }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-2-hex { color: #BFBFBF; }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-3-hex { color: #8C8C8C; }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-4-hex { color: #3F3F3F; }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-5-hex { color: #0C0C0C; }
-
-/* Color Theme Swatches in RGBA */
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-1-rgba { color: rgba(216, 216, 216, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-2-rgba { color: rgba(191, 191, 191, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-3-rgba { color: rgba(140, 140, 140, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-4-rgba { color: rgba(63, 63, 63, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-5-rgba { color: rgba(12, 12, 12, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-1-hsla { color: hsla(0, 0, 84, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-2-hsla { color: hsla(0, 0, 74, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-3-hsla { color: hsla(0, 0, 54, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-4-hsla { color: hsla(0, 0, 24, 1); }
-.Illustrations.-Aloysius-Bertrand-“-Gaspar-de-la-nuit-“-5-hsla { color: hsla(0, 0, 4, 1); }
+.Colorful-Sunset-Over-Albuquerque-New-Mexico-1-hex { color: #0377A5; }
+.Colorful-Sunset-Over-Albuquerque-New-Mexico-2-hex { color: #465901; }
+.Colorful-Sunset-Over-Albuquerque-New-Mexico-3-hex { color: #F28704; }
+.Colorful-Sunset-Over-Albuquerque-New-Mexico-4-hex { color: #BF5B03; }
+.Colorful-Sunset-Over-Albuquerque-New-Mexico-5-hex { color: #D8A477; }
 
 /* Color Theme Swatches in Hex */
-.SHADOWS-1-hex { color: #BF1303; }
-.SHADOWS-2-hex { color: #8C1207; }
-.SHADOWS-3-hex { color: #F26457; }
-.SHADOWS-4-hex { color: #590101; }
-.SHADOWS-5-hex { color: #0C0000; }
-
-/* Color Theme Swatches in RGBA */
-.SHADOWS-1-rgba { color: rgba(191, 19, 3, 1); }
-.SHADOWS-2-rgba { color: rgba(140, 18, 7, 1); }
-.SHADOWS-3-rgba { color: rgba(242, 100, 87, 1); }
-.SHADOWS-4-rgba { color: rgba(89, 1, 1, 1); }
-.SHADOWS-5-rgba { color: rgba(12, 0, 0, 1); }
-
-/* Color Theme Swatches in HSLA */
-.SHADOWS-1-hsla { color: hsla(5, 96, 38, 1); }
-.SHADOWS-2-hsla { color: hsla(4, 90, 28, 1); }
-.SHADOWS-3-hsla { color: hsla(5, 85, 64, 1); }
-.SHADOWS-4-hsla { color: hsla(0, 97, 17, 1); }
-.SHADOWS-5-hsla { color: hsla(0, 100, 2, 1); }
+.Southwest-House-Details-1-hex { color: #720216; }
+.Southwest-House-Details-2-hex { color: #80BDF2; }
+.Southwest-House-Details-3-hex { color: #0B7ABF; }
+.Southwest-House-Details-4-hex { color: #91CDF2; }
+.Southwest-House-Details-5-hex { color: #D89F7D; }
 
 /* Color Theme Swatches in Hex */
-.Two-jellyfish-on-a-blue-background-1-hex { color: #0424D9; }
-.Two-jellyfish-on-a-blue-background-2-hex { color: #031CA6; }
-.Two-jellyfish-on-a-blue-background-3-hex { color: #03178C; }
-.Two-jellyfish-on-a-blue-background-4-hex { color: #020F59; }
-.Two-jellyfish-on-a-blue-background-5-hex { color: #3DADF2; }
+.Overhead-shot-of-business-desktop-with-computer-1-hex { color: #86A0A6; }
+.Overhead-shot-of-business-desktop-with-computer-2-hex { color: #A8BBBF; }
+.Overhead-shot-of-business-desktop-with-computer-3-hex { color: #5A7326; }
+.Overhead-shot-of-business-desktop-with-computer-4-hex { color: #83A638; }
+.Overhead-shot-of-business-desktop-with-computer-5-hex { color: #F2F2F2; }
+/* Color Theme Swatches in Hex */
+.Santa-Fe-Opera-Season-2019-1-hex { color: #0410F2; }
+.Santa-Fe-Opera-Season-2019-2-hex { color: #0440F2; }
+.Santa-Fe-Opera-Season-2019-3-hex { color: #0453F2; }
+.Santa-Fe-Opera-Season-2019-4-hex { color: #5C838C; }
+.Santa-Fe-Opera-Season-2019-5-hex { color: #F2E5D5; }
 
-/* Color Theme Swatches in RGBA */
-.Two-jellyfish-on-a-blue-background-1-rgba { color: rgba(4, 36, 216, 1); }
-.Two-jellyfish-on-a-blue-background-2-rgba { color: rgba(3, 27, 165, 1); }
-.Two-jellyfish-on-a-blue-background-3-rgba { color: rgba(2, 23, 140, 1); }
-.Two-jellyfish-on-a-blue-background-4-rgba { color: rgba(1, 14, 89, 1); }
-.Two-jellyfish-on-a-blue-background-5-rgba { color: rgba(60, 172, 242, 1); }
 
-/* Color Theme Swatches in HSLA */
-.Two-jellyfish-on-a-blue-background-1-hsla { color: hsla(230, 96, 43, 1); }
-.Two-jellyfish-on-a-blue-background-2-hsla { color: hsla(230, 96, 33, 1); }
-.Two-jellyfish-on-a-blue-background-3-hsla { color: hsla(230, 96, 28, 1); }
-.Two-jellyfish-on-a-blue-background-4-hsla { color: hsla(230, 96, 17, 1); }
-.Two-jellyfish-on-a-blue-background-5-hsla { color: hsla(202, 87, 59, 1); }
+/* Color Theme Swatches in Hex */
+.Vector-Lovers-1-hex { color: #BF2633; }
+.Vector-Lovers-2-hex { color: #F23545; }
+.Vector-Lovers-3-hex { color: #A1D84E; }
+.Vector-Lovers-4-hex { color: #F2D33C; }
+.Vector-Lovers-5-hex { color: #F28A30; }
+
+/* Color Theme Swatches in Hex */
+.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-1-hex { color: #0377BF; }
+.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-2-hex { color: #82B7D8; }
+.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-3-hex { color: #038ABF; }
+.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-4-hex { color: #707222; }
+.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-5-hex { color: #D8B29C; }
+
