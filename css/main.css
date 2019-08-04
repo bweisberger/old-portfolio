@@ -132,8 +132,8 @@ html,body{
     overflow: hidden;
     justify-content: center;
     border: red solid 1px;
-    width: calc(15rem + 15vw);
-    height: calc(15rem + 15vw);
+    width: calc(10rem + 17vw);
+    height: calc(10rem + 17vw);
     margin: 1vw;
 }
 
