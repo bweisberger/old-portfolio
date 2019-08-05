@@ -4,108 +4,96 @@ html,body{
     margin: 0;
 }
 
-.background-picture{
-    background: rgb(13,53,213);
-    background: radial-gradient(ellipse, rgb(13, 53, 213) 0%, rgb(29, 38, 162) 100%);
-    /* height: 100vh; */
-    background-size: contain;
-    margin: 0;
-}
-
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: .9fr .5fr 5fr .5fr;
+    grid-template-rows: .5fr 5fr .5fr;
     min-height: 100vh;
 }
 
 .hero-header{
     grid-row: 1;
-    grid-column: 2;
-    align-self: end;
-    /* margin-top: 5vh; */
+    grid-column: 1 / span 3;
+    align-self: start;
+    color: #A59F96;
+    background-image: url('../images/keyboard.jpeg');
+    background-size: cover;
+    background-repeat: no repeat;
+}
+
+.gradient-div{
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    background: linear-gradient(0deg, rgba(63, 58, 54, 0.858) 0%, rgba(63, 58, 54, 0.858) 100%);
 }
 
 .hi-im-bill{
-    font-family: 'Archivo Black', sans-serif;
+    grid-row: 1;
+    grid-column: 2;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
-    color: rgb(213, 231, 242);
-    font-size: calc(20pt + 3vw);
-    text-align: center;
-    padding-bottom: 1vh;
-    margin: 0 auto;
-    /* line-height: 10vh; */
-    /* text-shadow: rgb(5, 120, 191) 3px 3px; */
-    /* text-shadow: #3DADF2 3px 3px; */
+    text-align: left;
+    place-self: end start;
+    margin: 0;
+    /* padding-top: 5vh; */
+    /* color: rgb(29, 29, 29); */
+    font-size: calc(16pt + 2vw);
+
 }
 
 .full-stack{
-    font-family: 'Archivo Black', sans-serif;
+    grid-row: 2;
+    grid-column: 2;
+    place-self: start;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
-    color: rgb(84, 165, 235);
-    font-size: calc(16pt + 3vw);
-    text-align: center;
-    padding-top: 0;
-    margin: 0 auto;
-    text-shadow: #020F59 2px 2px;
+    /* color: rgb(28, 28, 28); */
+    font-size: calc(6pt + 2vw);
+    text-align: left;  
+    margin: 0;  
 }
 
 .social-media-nav{
-    grid-row: 1;
-    grid-column: 1;
+    grid-row: 2;
+    grid-column: 3;
     /* width: 10vw; */
-    align-self: start;
+    justify-self: end;
 }
 
-.connect-section{
-    grid-row: 2;
-    grid-column: 2;
-    place-self: center;
+.connect-nav{
+    grid-row: 1;
+    grid-column: 2 / span 3;
+    place-self: start end;
+    margin-top: 1vh;
+    margin-right: 1vw;
 }
 
 .social-media-ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 10vw;;
 }
 
-.connect-button{
-    font-family: 'Oswald', sans-serif;
+.connect-link{
+    font-family: 'Red Hat Display', sans-serif;
     display: inline-block;
-    font-size: calc(1rem + 1vw);
-    color: #020F59;
-    background-color: rgb(108, 187, 237);
-    border: none;
-    padding: 0.5vw 1vw;
-    border-radius: 10px;
-    margin: 5vh 2vw 5vh 2vw;
-    box-shadow: 2px 2px #020F59;
-    background: linear-gradient(0deg, #BF5B03 0%, #F2D33C 80%, #D89F7D 100%);
-}
-
-.connect-button:hover{
-    background-color: rgb(134, 206, 250);
-    background: linear-gradient(0deg, #BF5B03 0%, #F2D33C 95%, #D89F7D 100%);
-    box-shadow: 4px 4px 1px #020F59;
+    font-size: calc(8pt + 1vw);
+    /* color: rgb(28, 28, 28); */
+    margin: 0 1vw;
 }
 
 .social-media-img{
     width: auto;
     height: calc(2rem + 1vw);
-    border-radius: 0 20% 20% 0;
     background-color: rgb(1, 8, 57);
-    box-shadow: 5px 0 5px #020F59	
 }
 
 .home-main{
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1 / span 3;
-    /* border-image: linear-gradient(0deg, #BF5B03 0%, #F2D33C 80%, #D89F7D 100%); */
-    border-top: rgb(191, 138, 3) .5vh solid;
-    background: #BF2633;
-    background: linear-gradient(90deg,#720216 0%, #BF2633 50%, #720216 100%)
-
+    background: rgb(233, 233, 233);
 }
 
 .projects-section{
@@ -118,11 +106,10 @@ html,body{
 .section-heading{
     grid-column: 2;
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;
-    /* font-weight: 700; */
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
     font-size: calc(14pt + 3vw);
-    color: rgb(213, 231, 242);
-    text-shadow: #020F59 1px 1px;
+    color: #3F3A36;
 }
 
 .skills-list{
@@ -132,16 +119,14 @@ html,body{
 }
 
 .skill-button{
-    box-shadow: 2px 2px rgb(14, 19, 82);
-    border-radius: 5px;
-    border: none;
+    border: 1px #59534E solid;
     margin: .5vw;
     font-size: calc(4pt + 1vw);
     padding: .5vw;
-    background-color: rgb(13, 53, 213);
-    color: #F2E5D5;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
+    background-color: rgb(233, 233, 233);
+    color: #3F3A36;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
 }
 
 .project-directory{
@@ -170,18 +155,25 @@ html,body{
     /* margin-left: vw; */
 }
 /* Color Theme Swatches in Hex */
-.Colorful-Sunset-Over-Albuquerque-New-Mexico-1-hex { color: #0377A5; }
+.Greek-Sketchbook-1-hex { color: #F2EDE3; }
+.Greek-Sketchbook-2-hex { color: #A59F96; }
+.Greek-Sketchbook-3-hex { color: #3F3A36; }
+.Greek-Sketchbook-4-hex { color: #59534E; }
+.Greek-Sketchbook-5-hex { color: #8C857F; }
+
+/* Color Theme Swatches in Hex */
+/* .Colorful-Sunset-Over-Albuquerque-New-Mexico-1-hex { color: #0377A5; }
 .Colorful-Sunset-Over-Albuquerque-New-Mexico-2-hex { color: #465901; }
 .Colorful-Sunset-Over-Albuquerque-New-Mexico-3-hex { color: #F28704; }
 .Colorful-Sunset-Over-Albuquerque-New-Mexico-4-hex { color: #BF5B03; }
-.Colorful-Sunset-Over-Albuquerque-New-Mexico-5-hex { color: #D8A477; }
+.Colorful-Sunset-Over-Albuquerque-New-Mexico-5-hex { color: #D8A477; } */
 
 /* Color Theme Swatches in Hex */
-.Southwest-House-Details-1-hex { color: #720216; }
+/* .Southwest-House-Details-1-hex { color: #720216; }
 .Southwest-House-Details-2-hex { color: #80BDF2; }
 .Southwest-House-Details-3-hex { color: #0B7ABF; }
 .Southwest-House-Details-4-hex { color: #91CDF2; }
-.Southwest-House-Details-5-hex { color: #D89F7D; }
+.Southwest-House-Details-5-hex { color: #D89F7D; } */
 
 /* Color Theme Swatches in Hex */
 .Overhead-shot-of-business-desktop-with-computer-1-hex { color: #86A0A6; }
@@ -196,18 +188,4 @@ html,body{
 .Santa-Fe-Opera-Season-2019-4-hex { color: #5C838C; }
 .Santa-Fe-Opera-Season-2019-5-hex { color: #F2E5D5; }
 
-
-/* Color Theme Swatches in Hex */
-.Vector-Lovers-1-hex { color: #BF2633; }
-.Vector-Lovers-2-hex { color: #F23545; }
-.Vector-Lovers-3-hex { color: #A1D84E; }
-.Vector-Lovers-4-hex { color: #F2D33C; }
-.Vector-Lovers-5-hex { color: #F28A30; }
-
-/* Color Theme Swatches in Hex */
-.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-1-hex { color: #0377BF; }
-.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-2-hex { color: #82B7D8; }
-.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-3-hex { color: #038ABF; }
-.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-4-hex { color: #707222; }
-.Family-on-hiking-on-vacation-in-beautiful-mountains.-Kasha-Katuwe-Tent-Rocks-National-Monument,-Close-to-of-Santa-Fe,-New-Mexico,-USA-5-hex { color: #D8B29C; }
 
