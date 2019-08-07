@@ -31,60 +31,27 @@
                             <a href="#email-me" class="connect-link contact-me">Contact</a>
                     </nav>
                 </div>
-            </header>
-            <div class="modal fade" tabindex="-1" id="about-me-modal" role="dialog">
-                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header no-border">
-                          <h5 class="modal-title">Hi! I'm Bill!</h5>
-                        </div>
-                        <div class="modal-body no-border">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <img class="d-block w-100" src="./images/24058818_701874666291_6142064506614048954_n (1).jpg" alt="First slide">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                    <h5>My wife and I love to travel.</h5>
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item">
-                                                <img class="d-block w-100" src="./images/20150415_101114.jpg" alt="Third slide">
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <h5>And I used to be a high school science teacher.</h5>
-                                                </div>
-                                            </div>
-                                          <div class="carousel-item">
-                                            <img class="d-block w-100" src="./images/DSC01936.jpg" alt="Second slide">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                    <h5>One year ago, we had a baby.</h5>
-                                            </div>
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img class="d-block w-100" src="./images/DSC03954.jpg" alt="Third slide">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                    <h5>And now I'm thrilled to be a junior web developer!</h5>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                          <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                          <span class="sr-only">Next</span>
-                                        </a>
-                                </div>
-                        </div>
-                      </div>
-                    </div>
+            </header> 
+            <div class="picture-div">
+              <img class="picture-bill" src="./images/DSC03341.JPG" alt="Bill Weisberger">
+            </div>           
+            <div class="modal fade" id="about-me-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">About me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
                   </div>
-            
+                  <div class="modal-body">
+                    <p>First I was a cook, then a science teacher, and now I'm a web developer.</p>
+                    <p>In all three roles, I had to be detail-oriented, positive, and talented to create outstanding experiences for my clients.</p>
+                    <p>I love people, and I love designing web applications that make people happy.</p>
+                  </div>
+                </div>
+              </div>
+            </div>          
             <main class="home-main">
                 <section class="projects-section">
                     <h2 class='section-heading'>Projects</h2>
@@ -102,7 +69,7 @@
                     </article>
                     <section name="Projects" class='project-directory'>
                             <div class='project-card'>
-                                <a class="project-link" target="_blank" href="https://down-to-play.herokuapp.com/">
+                                <a name="Projects"class="project-link" target="_blank" href="https://down-to-play.herokuapp.com/">
                                     <img class="project-img" src="./images/DTP Image.png" alt="Meetup-Style App">
                                 </a>
                                 <div class="hover-text">
@@ -117,10 +84,12 @@
                 </section>           
             </main>
             <footer class="home-footer">
-                <textarea  class="email-text" rows="6" cols="70" placeholder="Send me a message and I'll get back to you!"></textarea>
-                <a class="email-link" name="email-me" href="mailto:bill.weisberger@gmail.com">
-                    <button class="email-button">Send email</button>
-                </a>
+              <h4 class="footer-header">Contact me!</h4>
+              <ul class="social-media-ul-footer social-media-ul">
+                  <a name="email-me" target="_blank" href="https://github.com/bweisberger"><li class="social-media-li"><img class="social-media-img" src="./images/GitHub-Mark-Light-120px-plus.png" alt="github icon"/></li></a>               
+                  <a target="_blank" href="https://www.linkedin.com/in/billweisberger/"><li class="social-media-li"><img class="social-media-img" src="./images/LI-In-Bug-white.png" alt="Linkedin icon"/></li> </a>
+              </ul>
+              <img class="email-img" src="./images/email2.png" alt="email address">
             </footer>
         </div>
          
