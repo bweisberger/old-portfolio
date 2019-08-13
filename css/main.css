@@ -118,10 +118,10 @@ html,body{
 }
 
 .picture-bill{
-    width: 150%;
+    width: 280%;
     height: auto;
-    margin-left: -30%;
-    margin-top: -30%;
+    margin-left: -95%;
+    margin-top: 0;
 }
 
 .modal-content{
